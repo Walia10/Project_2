@@ -2,7 +2,7 @@
   width: 1700px;
   height: 1000px;
   background-color:#4F6F52;
-  animation: scene1 12s forwards;
+  animation: scene1 13s forwards;
   visibility: visible;
   position: relative;
 
@@ -16,29 +16,42 @@ text-align: center;
 position: absolute;
 font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-animation: scene1 12s forwards;
+
+
 }
 
 #Line1 {
-  animation: scene1 3.5s forwards;
+  animation: scene1 2.5s forwards;
   animation-delay: 0s;
   visibility: visible;
+  left: 50%;
+transform: translate(-50%, -50%);
 }
 
 #Line2 {
-  animation: slide-in 12s forwards;
-  animation-delay: 0.5s;
+  animation: slidein 11s forwards;
+  animation-delay: 0.2s;
+  animation-duration: 12.5s;
   visibility: hidden;
+  left:620px ;
 
 }
 
 #Line3 {
   visibility: hidden;
-  animation: slide-in 12s forwards;
-  animation-delay: 1s;
+  animation: slidein 11s forwards;
+  animation-duration: 12.5s;
+  animation-delay: 0.2s;
   left: 700px;
+
+
+}
+.images{
+  position: absolute;
+top: 0px;
+left: 0px;
+visibility: hidden;
+animation: slidein 12s forwards;
 
 
 }
@@ -47,7 +60,7 @@ animation: scene1 12s forwards;
 #image1,.text,.divider
 {
   animation: scene2 10s forwards;
-animation-delay: 12.5s;
+animation-delay: 12s;
 position: absolute;
 top: 0px;
 left: 0px;
@@ -55,13 +68,41 @@ visibility: hidden;
 
 }
 
+#image1{overflow:visible;}
+
+ #image2 {
+  animation: scene3 10s forwards;
+  animation-delay: 20s;
+  
+}
+
+#image3 { 
+  animation: scene4 10s forwards;
+  animation-delay: 25s;
+
+}  
+
+
+.textslidein {
+  position: absolute;
+  top: 50%;
+  font-size:100px;
+  color: rgb(0, 0, 0);
+  font-family:'Fantasy';
+  animation: slideinText 5s forwards;
+  animation-delay: 12s;
+  visibility: hidden;
+  font-weight: bolder;
+
+}
+
 
 .text{
   position: absolute;
   font-size: 20px;
-  top: 400px;
-  color: white;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  top: 40px;
+  color: black;
+  font-family:'Fantasy';
  
 }
 #text_Booking{left: 100px;}
@@ -72,8 +113,8 @@ visibility: hidden;
 
 .divider{
   position: absolute;
-  top: 395px;
-  color: white;
+  top: 39px;
+  color: black;
   font-size: 30px;
 
 }
@@ -89,7 +130,7 @@ visibility: hidden;
     
     
   }
-  95% {
+  70% {
     visibility: visible;
     opacity: 1;
   }
@@ -100,8 +141,22 @@ visibility: hidden;
   
   
 }
-@keyframes slide-in {
+
+@keyframes slideinText {
   0% {
+    visibility: visible;
+    left: -100%;
+  }
+  100% {
+     visibility: visible;
+    left: 500px;
+  }
+}
+
+
+@keyframes slidein {
+  0% 
+  {
       visibility: visible;
     left: -100%;
   }
@@ -111,12 +166,28 @@ visibility: hidden;
   }
 }
 
-
-
 @keyframes scene2 {
   0% {
     visibility: hidden;
     opacity: 0;
+  }
+  95% {
+    visibility: visible;
+    opacity: 0.75;
+  }
+  100% {
+    visibility: visible;
+    opacity:0.95;
+  }
+}
+
+
+@keyframes scene3 {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+    
+    
   }
   95% {
     visibility: visible;
@@ -126,7 +197,39 @@ visibility: hidden;
     visibility: visible;
     opacity: 1;
   }
+  
+  
+} 
+
+ @keyframes scene4 {
+  0% {
+    visibility: hidden;
+    opacity: 1;
+    
+    
+  }
+  95% {
+    visibility: visible;
+    opacity: 1;
+  }
+  100% {
+    visibility: visible;
+    opacity: 0;
+  }
+  
+  
+} 
+.images {
+  animation: slidein 12s forwards infinite;
+
 }
+
+
+
+
+
+
+
 
 
 
