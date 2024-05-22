@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="header.css">
+
+</head>
+<body>
+    <header>
+        <div class="imageHeader">
+            <img src="ImageCarousel1.png" class="images" id="ImageHeader1">
+            <img src="ImageCarousel2.png" class="images" id="ImageHeader2">
+            <img src="ImageCarousel3.png" class="images" id="ImageHeader3">
+        </div>
+
+        <div class="text" id="text_Booking">Book Resort Park</div>
+        <div class="divider" id="divider1">|</div>
+
+        <div class="text" id="text_Play">Play Game</div>
+        <div class="divider" id="divider2">|</div>
+
+        <div class="text" id="text_Document1">Documentation Part 1</div>
+        <div class="divider" id="divider3">|</div>
+
+        <div class="text" id="text_Document2">Documentation Part 2</div>
+
+        <div class="textslidein">Piha Resort</div>
+    </header>
+
+    <main>
+        <form>
+            <br><label class="label" for="CheckInDate">Check In Date</label>
+            <input type="date" id="CheckInDate" placeholder="Choose A Date" required>
+
+            <label class="label" for="CheckOutDate">Check Out Date</label>
+            <input type="date" id="CheckOutDate" placeholder="Choose A Date" required>
+
+            <label class="label" for="NoOfPeople">Number of People</label>
+            <input type="number" id="Adults" placeholder="Adults" required>
+            <input type="number" id="Children" placeholder="Children" required>
+            <button type="submit">Search</button>
+
+            
+
+
+
+        </form>
+
+        
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,23 +1,20 @@
-#start{
+#start {
   width: 1700px;
   height: 1000px;
-  background-color:#4F6F52;
+  background-color: #4F6F52;
   animation: scene1 13s forwards;
   visibility: visible;
   position: relative;
-
 }
-#Line1,#Line2,#Line3
-{
+
+#Line1, #Line2, #Line3 {
   font-size: 30px;
   color: white;
-visibility: visible;
-text-align: center;
-position: absolute;
-font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-top: 50%;
-
-
+  visibility: visible;
+  text-align: center;
+  position: absolute;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  top: 50%;
 }
 
 #Line1 {
@@ -25,7 +22,7 @@ top: 50%;
   animation-delay: 0s;
   visibility: visible;
   left: 50%;
-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 #Line2 {
@@ -33,8 +30,7 @@ transform: translate(-50%, -50%);
   animation-delay: 0.2s;
   animation-duration: 12.5s;
   visibility: hidden;
-  left:620px ;
-
+  left: 620px;
 }
 
 #Line3 {
@@ -43,193 +39,159 @@ transform: translate(-50%, -50%);
   animation-duration: 12.5s;
   animation-delay: 0.2s;
   left: 700px;
-
-
 }
-.images{
+
+.images {
   position: absolute;
-top: 0px;
-left: 0px;
-visibility: hidden;
-animation: slidein 12s forwards;
-
-
+  top: 0px;
+  left: 0px;
+  visibility: hidden;
 }
 
-
-#image1,.text,.divider
-{
-  animation: scene2 10s forwards;
-animation-delay: 12s;
-position: absolute;
-top: 0px;
-left: 0px;
-visibility: hidden;
-
+#image1 {
+  animation: imageAnimation 36s infinite;
+  animation-delay: 13s;
 }
 
-#image1{overflow:visible;}
-
- #image2 {
-  animation: scene3 10s forwards;
-  animation-delay: 20s;
-  
+#image2 {
+  animation: imageAnimation 36s infinite;
+  animation-delay: 25s; /* 13s + 12s for image1 */
 }
 
-#image3 { 
-  animation: scene4 10s forwards;
-  animation-delay: 25s;
-
-}  
-
+#image3 {
+  animation: imageAnimation 36s infinite;
+  animation-delay: 37s; /* 13s + 24s for image1 and image2 */
+}
 
 .textslidein {
   position: absolute;
   top: 50%;
-  font-size:100px;
+  font-size: 100px;
   color: rgb(0, 0, 0);
-  font-family:'Fantasy';
+  font-family: 'Fantasy';
   animation: slideinText 5s forwards;
   animation-delay: 12s;
   visibility: hidden;
   font-weight: bolder;
+}
+
+.text,.divider{
+  position: absolute;
+  color: black;
+  visibility: hidden;
+  animation: textvisible 36s infinite ;
+  animation-delay: 13s;
 
 }
 
-
-.text{
-  position: absolute;
+.text {
+ 
   font-size: 20px;
   top: 40px;
-  color: black;
-  font-family:'Fantasy';
  
+  font-family: 'Fantasy';
+
 }
-#text_Booking{left: 100px;}
-#text_Play{ left:350px;}
-#text_Document1{left:550px;}
-#text_Document2{left:900px;}
 
+#text_Booking {
+  left: 100px;
+}
 
-.divider{
+#text_Play {
+  left: 350px;
+}
+
+#text_Document1 {
+  left: 550px;
+}
+
+#text_Document2 {
+  left: 900px;
+}
+
+.divider {
   position: absolute;
   top: 39px;
-  color: black;
   font-size: 30px;
 
 }
-#divider1{left: 300px;}
-#divider2{left:500px}
-#divider3{left:800px}
 
+#divider1 {
+  left: 300px;
+}
+
+#divider2 {
+  left: 500px;
+}
+
+#divider3 {
+  left: 800px;
+}
 
 @keyframes scene1 {
   0% {
-    visibility: visible;
-    opacity: 1;
-    
-    
+      visibility: visible;
+      opacity: 1;
   }
   70% {
-    visibility: visible;
-    opacity: 1;
+      visibility: visible;
+      opacity: 1;
   }
   100% {
-    visibility: hidden;
-    opacity: 0;
+      visibility: hidden;
+      opacity: 0;
   }
-  
-  
+}
+
+@keyframes textvisible{
+  0%{
+    visibility: visible;
+  }
+  100%{
+    visibility: visible;
+  }
 }
 
 @keyframes slideinText {
   0% {
-    visibility: visible;
-    left: -100%;
+      visibility: visible;
+      left: -100%;
   }
   100% {
-     visibility: visible;
-    left: 500px;
+      visibility: visible;
+      left: 500px;
   }
 }
-
 
 @keyframes slidein {
-  0% 
-  {
+  0% {
       visibility: visible;
-    left: -100%;
+      left: -100%;
   }
- 
   100% {
-    visibility: hidden;
+      visibility: hidden;
   }
 }
 
-@keyframes scene2 {
+@keyframes imageAnimation {
   0% {
-    visibility: hidden;
-    opacity: 0;
+      visibility: hidden;
+      opacity: 0;
   }
-  95% {
-    visibility: visible;
-    opacity: 0.75;
+  5% {
+      visibility: visible;
+      opacity: 1;
+  }
+  30% {
+      visibility: visible;
+      opacity: 1;
+  }
+  35% {
+      visibility: hidden;
+      opacity: 0;
   }
   100% {
-    visibility: visible;
-    opacity:0.95;
+      visibility: hidden;
+      opacity: 0;
   }
 }
-
-
-@keyframes scene3 {
-  0% {
-    visibility: hidden;
-    opacity: 0;
-    
-    
-  }
-  95% {
-    visibility: visible;
-    opacity: 1;
-  }
-  100% {
-    visibility: visible;
-    opacity: 1;
-  }
-  
-  
-} 
-
- @keyframes scene4 {
-  0% {
-    visibility: hidden;
-    opacity: 1;
-    
-    
-  }
-  95% {
-    visibility: visible;
-    opacity: 1;
-  }
-  100% {
-    visibility: visible;
-    opacity: 0;
-  }
-  
-  
-} 
-.images {
-  animation: slidein 40s forwards infinite;
-
-}
-
-
-
-
-
-
-
-
-
-
