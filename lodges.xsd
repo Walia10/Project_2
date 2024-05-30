@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="lodges">
+        <xs:complexType>
+            <xs:sequence>
+
+
+                <xs:element name="lodge">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="image" type="xs:string" />
+                            <xs:element name="cost" type="xs:float" />
+                            <xs:element name="umn" type="xs:int" />
+                            <xs:element name="numberOfAdults" type="xs:int" />
+                            <xs:element name="numberOfChildren" type="xs:int" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+
+                <xs:element name="lodge">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="image" type="xs:string" />
+                            <xs:element name="cost" type="xs:float" />
+                            <xs:element name="umn" type="xs:int" />
+                            <xs:element name="numberOfAdults" type="xs:int" />
+                            <xs:element name="numberOfChildren" type="xs:int" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+
+                <xs:element name="lodge">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="image" type="xs:string" />
+                            <xs:element name="cost" type="xs:float" />
+                            <xs:element name="umn" type="xs:int" />
+                            <xs:element name="numberOfAdults" type="xs:int" />
+                            <xs:element name="numberOfChildren" type="xs:int" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+
+
+                <xs:element name="lodge">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="image" type="xs:string" />
+                            <xs:element name="cost" type="xs:float" />
+                            <xs:element name="umn" type="xs:int" />
+                            <xs:element name="numberOfAdults" type="xs:int" />
+                            <xs:element name="numberOfChildren" type="xs:int" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+
+
+                <xs:element name="lodge">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="image" type="xs:string" />
+                            <xs:element name="cost" type="xs:float" />
+                            <xs:element name="umn" type="xs:int" />
+                            <xs:element name="numberOfAdults" type="xs:int" />
+                            <xs:element name="numberOfChildren" type="xs:int" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+
+
+                <xs:element name="lodge">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="image" type="xs:string" />
+                            <xs:element name="cost" type="xs:float" />
+                            <xs:element name="umn" type="xs:int" />
+                            <xs:element name="numberOfAdults" type="xs:int" />
+                            <xs:element name="numberOfChildren" type="xs:int" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+
+                <xs:element name="lodge">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="image" type="xs:string" />
+                            <xs:element name="cost" type="xs:float" />
+                            <xs:element name="umn" type="xs:int" />
+                            <xs:element name="numberOfAdults" type="xs:int" />
+                            <xs:element name="numberOfChildren" type="xs:int" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+
+
+                <xs:element name="lodge">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="image" type="xs:string" />
+                            <xs:element name="cost" type="xs:float" />
+                            <xs:element name="umn" type="xs:int" />
+                            <xs:element name="numberOfAdults" type="xs:int" />
+                            <xs:element name="numberOfChildren" type="xs:int" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+
+
+
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    </xs:schema>
+
+
+  

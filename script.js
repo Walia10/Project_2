@@ -32,18 +32,23 @@ document.addEventListener('DOMContentLoaded', function () {
     setInterval(nextImage, 9000);/*9 seconds */
 });
 
-let currentDate= new Date();
-currentDate.toLocaleDateString();
-let inputDate= document.getElementById("CheckInDate");
+const submitButton = document.querySelector('button[type="submit"]');
+submitButton.addEventListener('click', validate());
 
 
+function validate(event) {
+    let currentDate = new Date();
+    let checkInDate = new Date(document.getElementById("CheckInDate").value);
+    let checkOutDate = new Date(document.getElementById("CheckOutDate").value);
 
-function Validate(){
-    if(inputDate<currentDate){
-        console.log("The input date is in past ")
-    }
-
+    if (checkInDate < currentDate || checkOutDate <= checkInDate) {
+        event.preventDefault();
+        window.prompt("Please select valid Check-in and Check-out dates.");
+       
 }
+}
+
+
 
 
 

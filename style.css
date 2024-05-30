@@ -55,19 +55,19 @@
 
 #image2 {
   animation: imageAnimation 36s infinite;
-  animation-delay: 25s; /* 13s + 12s for image1 */
+  animation-delay: 20s; 
 }
 
 #image3 {
   animation: imageAnimation 36s infinite;
-  animation-delay: 37s; /* 13s + 24s for image1 and image2 */
+  animation-delay: 27s; 
 }
 
 .textslidein {
   position: absolute;
   top: 50%;
   font-size: 100px;
-  color: rgb(0, 0, 0);
+  color: white;
   font-family: 'Fantasy';
   animation: slideinText 5s forwards;
   animation-delay: 12s;
