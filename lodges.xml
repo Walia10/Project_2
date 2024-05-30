@@ -3,7 +3,7 @@
 <lodges 
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <lodge>
-        <image></image>
+        <image>Room1.png</image>
         <cost>100</cost>
         <umn>2</umn>
         <numberOfAdults>1</numberOfAdults>
