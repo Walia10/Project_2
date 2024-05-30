@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="header.css">
+
+</head>
+<body>
+    <header>
+        <div class="imageHeader">
+            <img src="ImageCarousel1.png" class="images" id="ImageHeader1">
+            <img src="ImageCarousel2.png" class="images" id="ImageHeader2">
+            <img src="ImageCarousel3.png" class="images" id="ImageHeader3">
+        </div>
+
+        <div class="text" id="text_Booking">Book Resort Park</div>
+        <div class="divider" id="divider1">|</div>
+
+        <div class="text" id="text_Play">Play Game</div>
+        <div class="divider" id="divider2">|</div>
+
+        <div class="text" id="text_Document1">Documentation Part 1</div>
+        <div class="divider" id="divider3">|</div>
+
+        <div class="text" id="text_Document2">Documentation Part 2</div>
+
+        <div class="textslidein">Piha Resort</div>
+    </header>
+
+    <main>
+        <form>
+            <br><label class="label" for="CheckInDate">Check In Date</label>
+            <input type="date" id="CheckInDate" placeholder="Choose A Date" required>
+
+            <label class="label" for="CheckOutDate">Check Out Date</label>
+            <input type="date" id="CheckOutDate" placeholder="Choose A Date" required>
+
+            <label class="label" for="NoOfPeople">Number of People</label>
+            <input type="number" id="Adults" placeholder="Adults" required>
+            <input type="number" id="Children" placeholder="Children" required>
+            <button type="submit" onclick="validate()">Search</button>
+
+            
+
+
+
+        </form>
+
+        <br>
+        <div id="MapBox" class="LodgeMap">
+            <div id="Lodge1"  class="LodgeMap-2">
+                <div class="Number" id="Number1" >1</div>
+            </div>
+          
+
+            <div id="Lodge2"  class="LodgeMap-2">
+                <div class="Number" id="Number2" >2</div>
+            </div>
+
+            
+            <div id="Lodge3"  class="LodgeMap-2">
+            <div class="Number" id="Number3" >3</div>
+            </div>
+           
+
+            <div id="Lodge4"  class="LodgeMap-2">
+            <div class="Number" id="Number4" >4</div>
+            </div>
+        
+
+
+            <div id="Lodge5"  class="LodgeMap-2">
+            <div class="Number" id="Number5" >5</div>
+            </div>
+
+            <div id="Lodge6" class="LodgeMap-4">
+                <div class="Number" id="Number6" >6</div>
+
+            </div>
+
+            <div id="Lodge7" class="LodgeMap-4">
+                <div class="Number" id="Number7" >7</div>
+
+            </div>
+
+            <div id="Lodge8" class="LodgeMap-8">
+                <div class="Number" id="Number8" >8</div>
+
+            </div>
+
+        </div>
+
+
+        
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
