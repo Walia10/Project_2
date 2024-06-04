@@ -3,11 +3,12 @@
 <lodges 
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <lodge>
-        <image>Room1.png</image>
+        <image>Lodge1.png</image>
         <cost>100</cost>
         <umn>2</umn>
         <numberOfAdults>1</numberOfAdults>
         <numberOfChildren>0</numberOfChildren>
+        <booked>false</booked>
 
 
     </lodge>
@@ -18,6 +19,7 @@
         <umn>2</umn>
         <numberOfAdults>2</numberOfAdults>
         <numberOfChildren>0</numberOfChildren>
+        <booked>true</booked>
 
     </lodge>
     <lodge>
@@ -26,16 +28,7 @@
         <umn>2</umn>
         <numberOfAdults>2</numberOfAdults>
         <numberOfChildren>0</numberOfChildren>
-
-
-    </lodge>
-
-    <lodge>
-        <image></image>
-        <cost>100</cost>
-        <umn>2</umn>
-        <numberOfAdults>2</numberOfAdults>
-        <numberOfChildren>0</numberOfChildren>
+        <booked>true</booked>
 
 
     </lodge>
@@ -46,6 +39,18 @@
         <umn>2</umn>
         <numberOfAdults>2</numberOfAdults>
         <numberOfChildren>0</numberOfChildren>
+        <booked>false</booked>
+
+
+    </lodge>
+
+    <lodge>
+        <image></image>
+        <cost>100</cost>
+        <umn>2</umn>
+        <numberOfAdults>2</numberOfAdults>
+        <numberOfChildren>0</numberOfChildren>
+        <booked>false</booked>
 
 
     </lodge>
@@ -56,6 +61,7 @@
         <umn>4</umn>
         <numberOfAdults>2</numberOfAdults>
         <numberOfChildren>2</numberOfChildren>
+        <booked>true</booked>
 
 
     </lodge>
@@ -67,6 +73,7 @@
         <umn>4</umn>
         <numberOfAdults>2</numberOfAdults>
         <numberOfChildren>2</numberOfChildren>
+        <booked>false</booked>
 
 
     </lodge>
@@ -78,6 +85,7 @@
         <umn>6</umn>
         <numberOfAdults>2</numberOfAdults>
         <numberOfChildren>4</numberOfChildren>
+        <booked>false</booked>
 
 
     </lodge>
@@ -88,6 +96,7 @@
         <umn>6</umn>
         <numberOfAdults>2</numberOfAdults>
         <numberOfChildren>4</numberOfChildren>
+        <booked>false</booked>
 
 
     </lodge>
@@ -99,6 +108,7 @@
         <umn>8</umn>
         <numberOfAdults>4</numberOfAdults>
         <numberOfChildren>4</numberOfChildren>
+        <booked>false</booked>
 
 
     </lodge>

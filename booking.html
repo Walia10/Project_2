@@ -15,7 +15,7 @@
             <img src="ImageCarousel3.png" class="images" id="ImageHeader3">
         </div>
 
-        <div class="text" id="text_Booking">Book Resort Park</div>
+        <div class="text" id="text_Booking"> <a href="booking.html"> Book Resort Park </a> </div>
         <div class="divider" id="divider1">|</div>
 
         <div class="text" id="text_Play">Play Game</div>
@@ -30,26 +30,34 @@
     </header>
 
     <main>
+        <br><br>
+        <div class="mainContent">
         <form>
-            <br><label class="label" for="CheckInDate">Check In Date</label>
-            <input type="date" id="CheckInDate" placeholder="Choose A Date" required>
+            <br><label class="label" for="CheckInDate">Check In Date:</label>
+            <input type="date" id="CheckInDate" placeholder="Choose A Date" required>&nbsp 
 
-            <label class="label" for="CheckOutDate">Check Out Date</label>
-            <input type="date" id="CheckOutDate" placeholder="Choose A Date" required>
+            <label class="label" for="CheckOutDate">Check Out Date:</label>
+            <input type="date" id="CheckOutDate" placeholder="Choose A Date" required>&nbsp &nbsp
 
-            <label class="label" for="NoOfPeople">Number of People</label>
-            <input type="number" id="Adults" placeholder="Adults" required>
-            <input type="number" id="Children" placeholder="Children" required>
-            <button type="submit" onclick="validate()">Search</button>
+            <label class="label" for="NoOfPeople">Number of People-></label>
+            <input type="number" id="Adults" placeholder="Adults" min="0" required>&nbsp
+            <input type="number" id="Children" placeholder="Children" min="0" required>
+            <button type="submit">Search</button>
+
 
             
 
 
 
         </form>
+        </div>
 
-        <br>
-        <div id="MapBox" class="LodgeMap">
+
+
+        <div class="bigcontainer">
+      
+        
+        <div id="MapBox" class="LodgeMap" style="display: none;">
             <div id="Lodge1"  class="LodgeMap-2">
                 <div class="Number" id="Number1" >1</div>
             </div>
@@ -90,14 +98,52 @@
 
             </div>
 
+            <div class="lodge-number">
+
+            <label for="lodge-number-input">Enter Lodge Number:</label>
+            <input type="number" id="lodge-number-input" placeholder="Enter lodge number" min="1" max="8">
+            <button id="select-button">Select</button>
+            </div>
+        </div>
+            
+
         </div>
 
         <div id="tooltip" class="tooltip"></div>
+        
+        <!-- <div class="summary" id="summaryData" style="display: none;"> -->
 
+          <br><br> <div class="summary" id="summaryData" style="display: none;">
+                <div class="summary-item"><strong>Check In Date:</strong> <span id="summary-checkin"></span></div>
+                <div class="summary-item"><strong>Check Out Date:</strong> <span id="summary-checkout"></span></div>
+                <div class="summary-item"><strong>Number of People:</strong> <span id="summary-numberofpeople"></span></div>
+                <div class="summary-item"><strong>Lodge Selected:</strong> <span id="summary-lodge"></span></div>
+                <div class="summary-item"><strong>Total Price:</strong> <span id="summary-price"></span></div>
+                <button type="submit" class="button" id="confirm">Confirm</button>
+            </div>
+
+        </div>
+            
+
+        <!-- <div class="summary">Check In Date: <span id="summary-checkin"></span> </div><br>
+        <div class="summary">Check Out date: <span id="summary-checkout"></span> </div>
+        <div class="summary">Number of People: <span id="summary-numberofpeople"></span> </div>
+        <div class="summary">Lodge Selected: <span id="summary-lodge"></span> </div>
+        <div class="summary">Total Price: <span id="summary-price"></span> </div> 
+        <button type="submit" class="button" id="confirm">Confirm</button>
+        </div> -->
+        <!-- <div class="summary" id="summary-checkin">Check In Date:</div>
+        <div class="summary" id="summary-checkout">Check Out date:  </div>
+        <div class="summary"id="summary-numberofpeople" >Number of People: </div>
+        <div class="summary" id="summary-lodge">Lodge Selected:  </div>
+        <div class="summary" id="summary-price">Total Price:</div> <br>
+        <button type="submit" class="button" id="confirm">Confirm</button>
+     </div> -->
+ 
 
         
     </main>
 
-    <script src="script.js"></script>
+    <script src="S.js"></script>
 </body>
 </html>

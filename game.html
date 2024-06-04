@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beach Worm Catch Game</title>
+    <link rel="stylesheet" href="gameStyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&family=Teko:wght@400;700&display=swap"
+        rel="stylesheet">
+    <audio id="mainSound" loop>
+        <source src="Resources/audio/main-sound.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <audio id="initialEffect">
+        <source src="Resources/audio/initial-effect.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <audio id="gameStartEffect">
+        <source src="Resources/audio/game-start-effect.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <audio id="gameOverEffect">
+        <source src="Resources/audio/game-over-effect.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <audio id="catchWormEffect">
+        <source src="Resources/audio/catch-worm-effect.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <audio id="missWormEffect">
+        <source src="Resources/audio/miss-worm-effect.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <audio id="toggleEffect">
+        <source src="Resources/audio/toggle-effect.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <!-- other audio elements here -->
+</head>
+
+<body>
+    <div id="container">
+        <div id="gameContainer">
+            <video id="videoBackground" autoplay loop muted>
+                <source src="Resources/videos/beach-background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <canvas id="gameCanvas"></canvas>
+            <div id="instructions">
+                <p class="instruction-title">Character Control</p>
+                <p class="instruction-detail1">'W' or Up Arrow: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move Up</p>
+                <p class="instruction-detail1">'S' or Down Arrow: &nbsp;Move Down</p>
+                <p class="instruction-detail1">'A' or Left Arrow: &nbsp;&nbsp;&nbsp;&nbsp;Move Left</p>
+                <p class="instruction-detail1">'D' or Right Arrow: &nbsp;Move Right</p>
+                <p class="instruction-detail1">Space Bar:
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Catch Worm
+                </p>
+                <p class="instruction-title">Sound On/Off & Time Selection</p>
+                <p class="instruction-detail2">Toggle buttons to turn main sound and effect sound on/off.</p>
+                <p class="instruction-detail2">Toggle 'Game Time' button to turn 60 seconds or 180 seconds.</p>
+                <p class="instruction-title">Special Features</p>
+                <p class="instruction-detail1">'ESC' Key: Game Pause / Resume</p>
+                <p class="instruction-detail1">'END' Key: Abandon the game</p>
+            </div>
+            <div id="controls">
+                <span>Score: <span id="score">0</span></span>
+                <span class="time-label">Time: <span id="time">180</span> seconds</span>
+            </div>
+            <div id="buttons">
+                <button id="startButton" onclick="startGame()">Start Game</button>
+            </div>
+            <div id="gameOver">
+                <p class="instruction-title">Game Over!</p>
+                <p class="instruction-title">Your score is <span id="finalScore"></span></p>
+                <p class="instruction-title">Press Enter to continue</p>
+            </div>
+            <div id="pauseGame">
+                <p class="instruction-title">Pause</p>
+            </div>
+        </div>
+        <div id="settingsFrame">
+            <div id="settings">
+                <div class="toggleSwitch">
+                    <label class="toggle-label" for="mainSoundToggle">Main Sound</label>
+                    <div class="toggle_switch">
+                        <input type="checkbox" id="mainSoundToggle" onkeydown="return false;">
+                        <div class="slider"></div>
+                    </div>
+                </div>
+                <div class="toggleSwitch">
+                    <label class="toggle-label" for="effectSoundToggle">Effect Sound</label>
+                    <div class="toggle_switch">
+                        <input type="checkbox" id="effectSoundToggle" checked onkeydown="return false;">
+                        <div class="slider"></div>
+                    </div>
+                </div>
+                <div class="toggleSwitch">
+                    <label class="toggle-label" for="gameTimeToggle">Game Time</label>
+                    <div class="toggle_switch">
+                        <input type="checkbox" id="gameTimeToggle" onkeydown="return false;">
+                        <div class="slider">
+                            <span class="slider-label off">60</span>
+                            <span class="slider-label on">180</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+
+</html>
