@@ -1,4 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
+
+  
     var images = document.querySelectorAll('.images');
     var currentIndex = 0;
     var length = images.length;
@@ -55,7 +57,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         lodgeElement.dataset.booked = booked;
 
                         if (lodgeElement.dataset.booked === 'true') {
-                            lodgeElement.style.backgroundColor = 'red';
+                            lodgeElement.style.backgroundColor = '#A91D3A';
                             lodgeElement.style.cursor = 'not-allowed';
                         } else {
                             lodgeElement.addEventListener('click', selectLodge);
@@ -80,7 +82,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 <img src="${lodgeElement.dataset.image}" alt="Lodge Image" style="width:500px;height:auto;"><br>
                 <strong>Cost:</strong> $${lodgeElement.dataset.cost} <strong>per night</strong> 
                 <br>
-                <strong>Minimum People:</strong> ${lodgeElement.dataset.umn}<br>
+                <strong>Maximum People:</strong> ${lodgeElement.dataset.umn}<br>
                 <strong>This lodge is already booked.</strong>
             `;
         } else {
@@ -88,7 +90,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 <img src="${lodgeElement.dataset.image}" alt="Lodge Image" style="width:500px;height:auto;"><br>
                 <strong>Cost:</strong> $${lodgeElement.dataset.cost} <strong>per night</strong> 
                 <br>
-                <strong>Minimum People:</strong> ${lodgeElement.dataset.umn}<br>
+                <strong>Maximum People:</strong> ${lodgeElement.dataset.umn}<br>
             `;
         }
 
@@ -191,11 +193,32 @@ document.addEventListener('DOMContentLoaded', function () {
         document.getElementById('summaryData').style.display = 'block';
     });
 
+
+
+
+
+   
+
     function calculateTotalPrice(checkInDate, checkOutDate, costPerNight) {
         var checkIn = new Date(checkInDate);
         var checkOut = new Date(checkOutDate);
         var timeDifference = checkOut.getTime() - checkIn.getTime();
         var days = Math.ceil(timeDifference / (1000 * 60 * 60 * 24));
         return days * parseFloat(costPerNight);
+    }
+});
+
+
+var confirmButton = document.getElementById('confirm');
+confirmButton.addEventListener('click', function () {
+    alert('Successfully booked!');
+    window.location.reload();
+    if (selectedLodge) {
+        selectedLodge.style.backgroundColor = '#FF0000'; 
+        selectedLodge.classList.add('booked');
+        alert('Successfully booked!');
+        window.location.reload();
+    } else {
+        alert('Please select a lodge before confirming.');
     }
 });

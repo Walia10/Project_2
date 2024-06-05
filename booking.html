@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="booking.css">
+    <style>
+        
+    </style>
 
 </head>
 <body>
@@ -15,48 +18,47 @@
             <img src="ImageCarousel3.png" class="images" id="ImageHeader3">
         </div>
 
-        <div class="text" id="text_Booking"> <a href="booking.html"> Book Resort Park </a> </div>
+        <div class="text" id="text_Booking">
+            <a href="booking.html">Book Resort Park </a> </div>
         <div class="divider" id="divider1">|</div>
 
-        <div class="text" id="text_Play">Play Game</div>
+        <div class="text" id="text_Play"> 
+            <a href="game.html">Play Game </a> </div>
         <div class="divider" id="divider2">|</div>
 
-        <div class="text" id="text_Document1">Documentation Part 1</div>
+        <div class="text" id="text_Document1"> 
+           <a href="DocumentationPart1.pdf">Documentation Part 1 </a> </div>
         <div class="divider" id="divider3">|</div>
 
-        <div class="text" id="text_Document2">Documentation Part 2</div>
+        <div class="text" id="text_Document2"> 
+           <a href="Beach Worm Catch Game.pdf"> Documentation Part 2 </a> </div>
 
         <div class="textslidein">Piha Resort</div>
     </header>
 
     <main>
-        <br><br>
+    
+    
         <div class="mainContent">
+            <h2 class="heading">Find Your Stay</h2>
         <form>
-            <br><label class="label" for="CheckInDate">Check In Date:</label>
-            <input type="date" id="CheckInDate" placeholder="Choose A Date" required>&nbsp 
+            <center>
+            <label class="label" for="CheckInDate">Check In Date:</label>&nbsp &nbsp &nbsp  &nbsp  &nbsp 
+            <input type="date" id="CheckInDate" placeholder="Choose A Date" required>&nbsp &nbsp &nbsp  &nbsp  &nbsp 
 
-            <label class="label" for="CheckOutDate">Check Out Date:</label>
-            <input type="date" id="CheckOutDate" placeholder="Choose A Date" required>&nbsp &nbsp
+            <label class="label" for="CheckOutDate">Check Out Date:</label>&nbsp &nbsp &nbsp  &nbsp  &nbsp 
+            <input type="date" id="CheckOutDate" placeholder="Choose A Date" required><br><br>
+          
 
-            <label class="label" for="NoOfPeople">Number of People-></label>
-            <input type="number" id="Adults" placeholder="Adults" min="0" required>&nbsp
-            <input type="number" id="Children" placeholder="Children" min="0" required>
-            <button type="submit">Search</button>
-
-
-            
-
-
-
-        </form>
-        </div>
-
-
-
-        <div class="bigcontainer">
-      
+            <label class="label" for="NoOfPeople">Number of People-></label>&nbsp &nbsp &nbsp  &nbsp  &nbsp 
+            <input type="number" id="Adults" placeholder="Adults" min="0" required>&nbsp &nbsp &nbsp  &nbsp  &nbsp 
+            <input type="number" id="Children" placeholder="Children" min="0" required><br>
+            <button type="submit" class="button">Search</button>
+        </center>
         
+        </form>
+        </div> 
+    
         <div id="MapBox" class="LodgeMap" style="display: none;">
             <div id="Lodge1"  class="LodgeMap-2">
                 <div class="Number" id="Number1" >1</div>
@@ -97,23 +99,23 @@
                 <div class="Number" id="Number8" >8</div>
 
             </div>
+            <br>
 
             <div class="lodge-number">
 
             <label for="lodge-number-input">Enter Lodge Number:</label>
             <input type="number" id="lodge-number-input" placeholder="Enter lodge number" min="1" max="8">
-            <button id="select-button">Select</button>
+            <button id="select-button" class="button" >Select</button>
             </div>
         </div>
+    
             
-
-        </div>
-
         <div id="tooltip" class="tooltip"></div>
         
         <!-- <div class="summary" id="summaryData" style="display: none;"> -->
 
-          <br><br> <div class="summary" id="summaryData" style="display: none;">
+         <br> <div class="summary" id="summaryData" style="display: none;">
+            <h2 class="heading">Confirm Details</h2>
                 <div class="summary-item"><strong>Check In Date:</strong> <span id="summary-checkin"></span></div>
                 <div class="summary-item"><strong>Check Out Date:</strong> <span id="summary-checkout"></span></div>
                 <div class="summary-item"><strong>Number of People:</strong> <span id="summary-numberofpeople"></span></div>
@@ -144,6 +146,6 @@
         
     </main>
 
-    <script src="S.js"></script>
+    <script src="booking.js"></script>
 </body>
 </html>

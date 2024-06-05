@@ -1,5 +1,5 @@
 /* Global styles for body and html */
-body,
+/* body,
 html {
     margin: 0;
     padding: 0;
@@ -9,7 +9,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-}
+} */
 
 /* Container for the game and settings */
 #container {

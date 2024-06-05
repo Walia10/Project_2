@@ -1,13 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beach Worm Catch Game</title>
     <link rel="stylesheet" href="gameStyle.css">
     <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&family=Teko:wght@400;700&display=swap"
         rel="stylesheet">
+        <link href="header.css" rel="stylesheet">
+
+
+
+
+        <header>
+            <div class="imageHeader">
+                <img src="ImageCarousel1.png" class="images" id="ImageHeader1">
+                <img src="ImageCarousel2.png" class="images" id="ImageHeader2">
+                <img src="ImageCarousel3.png" class="images" id="ImageHeader3">
+            </div>
+    
+            <div class="text" id="text_Booking">
+                <a href="booking.html">Book Resort Park </a> </div>
+            <div class="divider" id="divider1">|</div>
+    
+            <div class="text" id="text_Play"> 
+                <a href="game.html">Play Game </a> </div>
+            <div class="divider" id="divider2">|</div>
+    
+            <div class="text" id="text_Document1"> 
+               <a href="DocumentationPart1.pdf">Documentation Part 1 </a> </div>
+            <div class="divider" id="divider3">|</div>
+    
+            <div class="text" id="text_Document2"> 
+               <a href="Beach Worm Catch Game.pdf"> Documentation Part 2 </a> </div>
+            <div class="textslidein">Piha Resort</div>
+            </header>
+      
+
     <audio id="mainSound" loop>
         <source src="Resources/audio/main-sound.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
@@ -109,6 +139,7 @@
         </div>
     </div>
     <script src="game.js"></script>
+    <script src="s.js"></script>
 </body>
 
 </html>
