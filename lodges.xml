@@ -14,7 +14,7 @@
     </lodge>
 
     <lodge>
-        <image></image>
+        <image>Lodge1.png</image>
         <cost>100</cost>
         <umn>2</umn>
         <numberOfAdults>2</numberOfAdults>
@@ -23,7 +23,7 @@
 
     </lodge>
     <lodge>
-        <image></image>
+        <image>Lodge1.png</image>
         <cost>100</cost>
         <umn>2</umn>
         <numberOfAdults>2</numberOfAdults>
@@ -34,7 +34,7 @@
     </lodge>
 
     <lodge>
-        <image></image>
+        <image>Lodge1.png</image>
         <cost>100</cost>
         <umn>2</umn>
         <numberOfAdults>2</numberOfAdults>
@@ -45,7 +45,7 @@
     </lodge>
 
     <lodge>
-        <image></image>
+        <image>Lodge1.png</image>
         <cost>100</cost>
         <umn>2</umn>
         <numberOfAdults>2</numberOfAdults>
@@ -56,7 +56,7 @@
     </lodge>
 
     <lodge>
-        <image></image>
+        <image>Lodge6.png</image>
         <cost>200</cost>
         <umn>4</umn>
         <numberOfAdults>2</numberOfAdults>
@@ -68,7 +68,7 @@
 
 
     <lodge>
-        <image></image>
+        <image>Lodge6.png</image>
         <cost>200</cost>
         <umn>4</umn>
         <numberOfAdults>2</numberOfAdults>
@@ -79,31 +79,11 @@
     </lodge>
 
 
-    <lodge>
-        <image></image>
-        <cost>300</cost>
-        <umn>6</umn>
-        <numberOfAdults>2</numberOfAdults>
-        <numberOfChildren>4</numberOfChildren>
-        <booked>false</booked>
-
-
-    </lodge>
-
-    <lodge> 
-        <image></image>
-        <cost>300</cost>
-        <umn>6</umn>
-        <numberOfAdults>2</numberOfAdults>
-        <numberOfChildren>4</numberOfChildren>
-        <booked>false</booked>
-
-
-    </lodge>
+    
 
 
     <lodge>
-        <image></image>
+        <image>Lodge8.png</image>
         <cost>400</cost>
         <umn>8</umn>
         <numberOfAdults>4</numberOfAdults>
