@@ -14,6 +14,97 @@
                             <xs:element name="umn" type="xs:int" />
                             <xs:element name="numberOfAdults" type="xs:int" />
                             <xs:element name="numberOfChildren" type="xs:int" />
+                            <xs:element name="booked" type="xs:boolean"></xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+
+                <xs:element name="lodge">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="image" type="xs:string" />
+                            <xs:element name="cost" type="xs:float" />
+                            <xs:element name="umn" type="xs:int" />
+                            <xs:element name="numberOfAdults" type="xs:int" />
+                            <xs:element name="numberOfChildren" type="xs:int" />
+                            <xs:element name="booked" type="xs:boolean"></xs:element>
+                      
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+
+                <xs:element name="lodge">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="image" type="xs:string" />
+                            <xs:element name="cost" type="xs:float" />
+                            <xs:element name="umn" type="xs:int" />
+                            <xs:element name="numberOfAdults" type="xs:int" />
+                            <xs:element name="numberOfChildren" type="xs:int" />
+                            <xs:element name="booked" type="xs:boolean"></xs:element>
+                      
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+
+                <xs:element name="lodge">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="image" type="xs:string" />
+                            <xs:element name="cost" type="xs:float" />
+                            <xs:element name="umn" type="xs:int" />
+                            <xs:element name="numberOfAdults" type="xs:int" />
+                            <xs:element name="numberOfChildren" type="xs:int" />
+                            <xs:element name="booked" type="xs:boolean"></xs:element>
+                      
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+
+                <xs:element name="lodge">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="image" type="xs:string" />
+                            <xs:element name="cost" type="xs:float" />
+                            <xs:element name="umn" type="xs:int" />
+                            <xs:element name="numberOfAdults" type="xs:int" />
+                            <xs:element name="numberOfChildren" type="xs:int" />
+                            <xs:element name="booked" type="xs:boolean"></xs:element>
+                      
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+
+                <xs:element name="lodge">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="image" type="xs:string" />
+                            <xs:element name="cost" type="xs:float" />
+                            <xs:element name="umn" type="xs:int" />
+                            <xs:element name="numberOfAdults" type="xs:int" />
+                            <xs:element name="numberOfChildren" type="xs:int" />
+                            <xs:element name="booked" type="xs:boolean"></xs:element>
+                      
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+
+                <xs:element name="lodge">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="image" type="xs:string" />
+                            <xs:element name="cost" type="xs:float" />
+                            <xs:element name="umn" type="xs:int" />
+                            <xs:element name="numberOfAdults" type="xs:int" />
+                            <xs:element name="numberOfChildren" type="xs:int" />
+                            <xs:element name="booked" type="xs:boolean"></xs:element>
+                      
                         </xs:sequence>
                     </xs:complexType>
                 </xs:element>
@@ -40,84 +131,8 @@
                             <xs:element name="umn" type="xs:int" />
                             <xs:element name="numberOfAdults" type="xs:int" />
                             <xs:element name="numberOfChildren" type="xs:int" />
-                        </xs:sequence>
-                    </xs:complexType>
-                </xs:element>
-
-
-                <xs:element name="lodge">
-                    <xs:complexType>
-                        <xs:sequence>
-                            <xs:element name="image" type="xs:string" />
-                            <xs:element name="cost" type="xs:float" />
-                            <xs:element name="umn" type="xs:int" />
-                            <xs:element name="numberOfAdults" type="xs:int" />
-                            <xs:element name="numberOfChildren" type="xs:int" />
-                        </xs:sequence>
-                    </xs:complexType>
-                </xs:element>
-
-
-                <xs:element name="lodge">
-                    <xs:complexType>
-                        <xs:sequence>
-                            <xs:element name="image" type="xs:string" />
-                            <xs:element name="cost" type="xs:float" />
-                            <xs:element name="umn" type="xs:int" />
-                            <xs:element name="numberOfAdults" type="xs:int" />
-                            <xs:element name="numberOfChildren" type="xs:int" />
-                        </xs:sequence>
-                    </xs:complexType>
-                </xs:element>
-
-
-                <xs:element name="lodge">
-                    <xs:complexType>
-                        <xs:sequence>
-                            <xs:element name="image" type="xs:string" />
-                            <xs:element name="cost" type="xs:float" />
-                            <xs:element name="umn" type="xs:int" />
-                            <xs:element name="numberOfAdults" type="xs:int" />
-                            <xs:element name="numberOfChildren" type="xs:int" />
-                        </xs:sequence>
-                    </xs:complexType>
-                </xs:element>
-
-
-                <xs:element name="lodge">
-                    <xs:complexType>
-                        <xs:sequence>
-                            <xs:element name="image" type="xs:string" />
-                            <xs:element name="cost" type="xs:float" />
-                            <xs:element name="umn" type="xs:int" />
-                            <xs:element name="numberOfAdults" type="xs:int" />
-                            <xs:element name="numberOfChildren" type="xs:int" />
-                        </xs:sequence>
-                    </xs:complexType>
-                </xs:element>
-
-
-                <xs:element name="lodge">
-                    <xs:complexType>
-                        <xs:sequence>
-                            <xs:element name="image" type="xs:string" />
-                            <xs:element name="cost" type="xs:float" />
-                            <xs:element name="umn" type="xs:int" />
-                            <xs:element name="numberOfAdults" type="xs:int" />
-                            <xs:element name="numberOfChildren" type="xs:int" />
-                        </xs:sequence>
-                    </xs:complexType>
-                </xs:element>
-
-
-                <xs:element name="lodge">
-                    <xs:complexType>
-                        <xs:sequence>
-                            <xs:element name="image" type="xs:string" />
-                            <xs:element name="cost" type="xs:float" />
-                            <xs:element name="umn" type="xs:int" />
-                            <xs:element name="numberOfAdults" type="xs:int" />
-                            <xs:element name="numberOfChildren" type="xs:int" />
+                            <xs:element name="booked" type="xs:boolean"></xs:element>
+                      
                         </xs:sequence>
                     </xs:complexType>
                 </xs:element>

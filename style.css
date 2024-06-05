@@ -84,14 +84,18 @@
 
 }
 
-.text {
+.text,a {
  
   font-size: 20px;
   top: 40px;
- 
   font-family: 'Fantasy';
+  color: black;
 
 }
+a{
+  text-decoration: none;
+}
+
 
 #text_Booking {
   left: 100px;
